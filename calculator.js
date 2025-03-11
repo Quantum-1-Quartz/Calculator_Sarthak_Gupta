@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 updateDisplay(target.innerHTML);
             }
-        } else if (target.id === "=") {
+        } else if (target.id === "equal") {
             try {
                 let answer = evaluate(textarea.value);
                 lastOutput = isNaN(answer) || !isFinite(answer) ? "" : (answer % 1 === 0 ? answer : answer.toFixed(2));
